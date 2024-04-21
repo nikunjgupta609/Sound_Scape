@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=1028">
+    <meta name="theme-color" content="#000000">
+
+    <link rel="stylesheet" type="text/css" href="./fonts/fonts.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Sound Scape</title>
+    <style>
+        .round-button:hover{
+          cursor: pointer;
+        }
+    </style>
+
+  </head>
+  <body>
+    <button class="round-button" onclick="redirect()" style="background-color: #1db954; position: relative; top: 100px; left: 1000px; padding: 10px 15px; border-radius: 30px; border: none; font-size: 12px;" type="button"><span style="color: white; font:bold">Connect < > </span></button>
+    <div id="root"></div>
+    <script>
+      function redirect() {
+          window.location.href = "http://localhost:5000/";
+      }
+    </script>
+    
+  </body>
+</html>
