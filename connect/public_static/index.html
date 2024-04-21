@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sound Scape</title>
+    <link rel="icon" href="/connect/public_static/favicon.ico">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    
+    <style>
+    body {
+        margin-left: 25%;
+        background : #181818;
+        color : white;
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+        width: 50%;
+        }
+    .fa {
+        color: #1db954;
+        font-size: 150px;
+        cursor: pointer;
+        }
+        .fa-play-circle {
+            
+        }
+        .hide {
+            display: none;
+        }
+        .show {
+            display: block;
+        }
+        ul li {
+            list-style: none;
+            display: inline-block;
+            padding: 10px 20px;
+            border: 1px solid white;
+            cursor: pointer;
+        }
+    </style>
+    
+</head>
+<body>
+<h1 style="font-size: 50px;">Sound Scape <span style="color: #1db954;">Connect</span></h1>
+<h3>A place where multiple devices connect to each other and play music simultaneously in synchronization. This system allows users to seamlessly stream music from their device and synchronize them to a common beat, creating a unified and immersive audio experience.</h3>
+<br>
+<button id="load">Load Music</button>
+    <i id = "play" class="fa fa-play-circle show" aria-hidden="true"></i>
+    <i id = "pause" class="fa fa-pause-circle hide" aria-hidden="true"></i>
+<ul>
+    <li style="margin: 8px;" id="song0">Despacito</li>
+    <li style="margin: 8px;" id="song1">Cute</li>
+    <li style="margin: 8px;" id="song2">Tum-Se</li>
+    <li style="margin: 8px;" id="song3">As-It-Was</li>
+</ul>
+<!--<button id="play">Play Song</button>
+<button id="pause">Pause Song</button>-->
+    <h2>This Player removes a problem we face many a times. Not loud enough speaker. Two clients can play same song that play simultaneously to use up many speakers on different clients.</h2>
+    <h3>The music plays on all tabs/clients open. Each and every client has the controls for the music. <br>Right Now only one song is available on the server.</h3>
+<audio preload="true" id="myaudio">
+    <source src="despacito.mp3" class="audio-source">
+</audio>
+<script src="jquery.js"></script>
+<script src="/socket.io/socket.io.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
